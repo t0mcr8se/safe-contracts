@@ -77,6 +77,20 @@ const userConfig: HardhatUserConfig = {
       blockGasLimit: 100000000,
       gas: 100000000
     },
+    fuse: {
+      ...sharedNetworkConfig,
+      blockGasLimit: 15000000,
+      gas: 15000000,
+      gasPrice: 1000000000,
+      url: 'https://rpc.fuse.io/'
+    },
+    spark: {
+      ...sharedNetworkConfig,
+      blockGasLimit: 15000000,
+      gas: 15000000,
+      gasPrice: 1000000000,
+      url: 'https://rpc.fusespark.io/'
+    },
     mainnet: {
       ...sharedNetworkConfig,
       url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
